@@ -1,12 +1,14 @@
 [![Circle CI](https://circleci.com/gh/jshimko/meteor-launchpad/tree/master.svg?style=svg)](https://circleci.com/gh/jshimko/meteor-launchpad/tree/master)
 # Meteor Launchpad - Base Docker Image for Meteor Apps
 
+> This meteor-launchpad fork uses keyserver.ubuntu.com as a replacement for the sks-keyservers.
+
 ### Build
 
 Add the following to a `Dockerfile` in the root of your app:
 
 ```Dockerfile
-FROM jshimko/meteor-launchpad:latest
+FROM timbaas/meteor-launchpad:latest
 ```
 
 Then you can build the image with:
